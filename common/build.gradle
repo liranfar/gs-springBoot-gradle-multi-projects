@@ -10,7 +10,7 @@ apply plugin: 'java'
 apply plugin: 'idea'
 
 jar {
-    baseName = 'gs-multi-module-library'
+    baseName = 'gs-multi-module-common'
     version = '0.0.1-SNAPSHOT'
 }
 sourceCompatibility = 1.8

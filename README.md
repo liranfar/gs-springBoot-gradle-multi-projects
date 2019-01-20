@@ -4,7 +4,7 @@ A skeleton for starting multi-projects (synced with IntelliJ IDE)
 
 ## Getting Started
 
-`./gradlew build && ./gradlew :application:bootRun`
+`./gradlew build && ./gradlew bootRun --parallel`
 
 ## License
 
@@ -14,4 +14,4 @@ This project is licensed under the MIT License
 
 
 [Spring.io - multi-module](https://spring.io/guides/gs/multi-module/)
-
+[launch multiple servers on spring boot](https://stackoverflow.com/questions/23621723/launch-multiple-gradle-spring-boot-plugin-bootrun-tasks-in-parallel)
