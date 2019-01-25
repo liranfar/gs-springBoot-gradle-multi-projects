@@ -1,7 +1,28 @@
-subprojects {
+buildscript {
+    ext { springBootVersion = '2.0.5.RELEASE' }
+    repositories { mavenCentral() }
+    dependencies { classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") }
+}
+
+plugins {
+    id "io.spring.dependency-management" version "1.0.5.RELEASE"
+}
+
+allprojects {
     apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'idea'
+
+    dependencyManagement {
+        imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+    }
+    
 
     repositories {
         mavenCentral()
     }
+    
+    sourceCompatibility = 1.8
+    
 }

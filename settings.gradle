@@ -1,2 +1,3 @@
 include 'application'
-include 'library'
+include 'common'
+include 'greeter'
