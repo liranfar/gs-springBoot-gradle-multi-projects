@@ -1,4 +1,5 @@
 jar {
+    group = 'com.example'
     baseName = 'gs-multi-module-common'
     version = '0.0.1-SNAPSHOT'
 }

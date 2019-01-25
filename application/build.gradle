@@ -2,6 +2,7 @@ apply plugin: 'org.springframework.boot'
 
 
 bootJar {
+    group = 'com.example'
     baseName = 'gs-multi-module-application'
     version = '0.0.1-SNAPSHOT'
 }
@@ -9,6 +10,8 @@ bootJar {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
     compile project(':common')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

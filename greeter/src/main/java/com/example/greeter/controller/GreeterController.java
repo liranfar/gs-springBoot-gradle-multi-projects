@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @Service
-public class Greeter {
+public class GreeterController {
 
     @RequestMapping(value = "/")
     public String hello() {
