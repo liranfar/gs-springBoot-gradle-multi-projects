@@ -6,6 +6,12 @@ A skeleton for starting multi-projects (synced with IntelliJ IDE)
 
 `./gradlew build && ./gradlew bootRun --parallel`
 
+## Build Docker Image
+```
+./gradlew build application:buildDocker
+
+```
+
 ## License
 
 This project is licensed under the MIT License
