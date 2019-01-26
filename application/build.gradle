@@ -8,6 +8,7 @@ bootJar {
 }
 
 dependencies {
+    compile group: 'de.codecentric', name: 'spring-boot-admin-starter-client', version: '2.1.2'
     compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
